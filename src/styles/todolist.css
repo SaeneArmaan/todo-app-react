@@ -1,0 +1,66 @@
+@import "../index.css";
+
+.todolist {
+  position: relative;
+  flex-direction: column;
+  overflow: scroll;
+  max-height: 400px;
+  border-radius: 5px;
+  background-color: var(--Primary-Background);
+  -webkit-box-shadow: 0px 15px 40px 10px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 15px 40px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 15px 40px 10px rgba(0, 0, 0, 0.05);
+}
+
+.todolist::-webkit-scrollbar {
+  display: none;
+}
+
+.todolist .todolist_filterbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-weight: 700;
+  padding: 0px 20px;
+  font-size: 0.9rem;
+}
+
+.todolist_filterbar li {
+  list-style: none;
+}
+
+.todolist_filterbar li:hover {
+  cursor: pointer;
+  color: var(--Primary-Text);
+}
+
+.todolist .todolist_statusbar {
+  position: sticky;
+  bottom: 0px;
+  padding: 12px;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--Secondary-Text);
+  border-top: 1px solid var(--Divider);
+  background-color: var(--Primary-Background);
+}
+
+.todolist .todolist_clear:hover {
+  color: var(--Primary-Text);
+  cursor: pointer;
+}
+
+.todolist .todolist_alert {
+  color: var(--Secondary-Text);
+  padding: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .todolist .todolist_filterbar {
+    display: none;
+  }
+}

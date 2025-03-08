@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --Bright-Blue: hsl(220, 98%, 61%);
+
+  --Primary-Background: hsl(235, 24%, 19%);
+  --Secondary-Background: hsl(235, 21%, 11%);
+  --Primary-Text: hsl(234, 39%, 85%);
+  --Secondary-Text: hsl(234, 11%, 52%);
+  --Heading-Text: hsl(100, 100%, 100%);
+  --Dashed-Text: hsl(233, 14%, 35%);
+  --Divider: hsl(233, 14%, 35%);
+}
+
+.light-theme {
+  --Primary-Background: hsl(0, 0%, 100%);
+  --Secondary-Background: hsl(0, 0%, 98%);
+  --Primary-Text: hsl(235, 19%, 35%);
+  --Secondary-Text: hsl(236, 9%, 61%);
+  --Dashed-Text: hsl(236, 33%, 92%);
+  --Divider: hsl(233, 11%, 84%);
+}
+
+.dark-theme {
+  --Primary-Background: hsl(235, 24%, 19%);
+  --Secondary-Background: hsl(235, 21%, 11%);
+  --Primary-Text: hsl(234, 39%, 85%);
+  --Secondary-Text: hsl(234, 11%, 52%);
+  --Heading-Text: hsl(100, 100%, 100%);
+  --Dashed-Text: hsl(233, 14%, 35%);
+  --Divider: hsl(233, 14%, 35%);
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+
+  color: var(--Primary-Text);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
+:is(h1, h2, h3, h4, h5, h6, p) {
+  margin-top: 4px;
+}
+
+main,
+div,
+section {
+  display: flex;
+  min-width: 100%;
+}
+
+body {
+  background-color: var(--Secondary-Background);
+}
